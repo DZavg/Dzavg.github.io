@@ -245,12 +245,12 @@ main {
 
 .header__logo:after {
   content: "";
-  width: 65px;
+  width: 64px;
   height: 4px;
   background-color: #bea67c;
   position: absolute;
   top: 39px;
-  left: 43px;
+  left: 42px;
 }
 
 @media (max-width: 1040px) {
@@ -273,11 +273,11 @@ main {
     margin: 0 auto;
   }
   .header__logo:after {
-    width: 46px;
+    width: 48px;
     height: 3px;
     background-color: #bea67c;
     top: 30px;
-    left: 33px;
+    left: 35px;
   }
 }
 
@@ -1847,12 +1847,12 @@ main {
 
 .footer__logo:after {
   content: "";
-  width: 55px;
+  width: 54px;
   height: 4px;
   background-color: #bea67c;
   position: absolute;
-  top: 33px;
-  left: 39px;
+  top: 32px;
+  left: 38px;
 }
 
 @media (max-width: 850px) {
@@ -1872,11 +1872,11 @@ main {
     padding-bottom: 20px;
   }
   .footer__logo:after {
-    width: 46px;
+    width: 48px;
     height: 3px;
     background-color: #bea67c;
     top: 40px;
-    left: 32px;
+    left: 34px;
   }
 }
 
