@@ -935,6 +935,10 @@ main {
    &__item {
       @include list();
       margin-right: 110px;
+      width: 33.3333%;
+      align-items: center;
+      display: flex;
+      flex-direction: column;
       &:last-child {
          margin-right: 0;
       }
@@ -944,6 +948,7 @@ main {
       @media (max-width: 768px) {
          margin-right: 0;
          margin-bottom: 50px;
+         width: auto;
       }
    }
    &__content {
@@ -1104,7 +1109,7 @@ main {
          }
       }
    }
-   &__title {
+   &__slogan {
       width: 506px;
       color: #bea67c;
       font-size: 48px;
@@ -1172,22 +1177,14 @@ main {
          cursor: pointer;
          font-size: 16px;
          &:after {
-            background-size: 28px 28px;
-            height: 28px;
-            width: 28px;
-            left: calc(50% - 74.5px);
-            top: calc(50% - 14px);
             transition: 0.2s all;
+            transform: scale(1.2);
          }
       }
       &:active {
          font-size: 15px;
          &:after {
-            background-size: 26px 26px;
-            height: 26px;
-            width: 26px;
-            left: calc(50% - 72.5px);
-            top: calc(50% - 13px);
+            transform: scale(1.1);
             transition: 0.2s all;
          }
       }

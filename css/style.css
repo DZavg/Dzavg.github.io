@@ -1277,6 +1277,17 @@ main {
   text-decoration: none;
   list-style: none;
   margin-right: 110px;
+  width: 33.3333%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .videos__item:last-child {
@@ -1293,6 +1304,7 @@ main {
   .videos__item {
     margin-right: 0;
     margin-bottom: 50px;
+    width: auto;
   }
 }
 
@@ -1501,7 +1513,7 @@ main {
   }
 }
 
-.video__title {
+.video__slogan {
   width: 506px;
   color: #bea67c;
   font-size: 48px;
@@ -1512,14 +1524,14 @@ main {
   padding-bottom: 30px;
 }
 
-.video__title::before {
+.video__slogan::before {
   background-color: #fff;
   top: 27px;
   left: -170px;
 }
 
 @media (max-width: 768px) {
-  .video__title {
+  .video__slogan {
     font-size: 32px;
     line-height: 44px;
     width: auto;
@@ -1588,14 +1600,12 @@ main {
 }
 
 .video__button:hover:after {
-  background-size: 28px 28px;
-  height: 28px;
-  width: 28px;
-  left: calc(50% - 74.5px);
-  top: calc(50% - 14px);
   -webkit-transition: 0.2s all;
   -o-transition: 0.2s all;
   transition: 0.2s all;
+  -webkit-transform: scale(1.2);
+      -ms-transform: scale(1.2);
+          transform: scale(1.2);
 }
 
 .video__button:active {
@@ -1603,11 +1613,9 @@ main {
 }
 
 .video__button:active:after {
-  background-size: 26px 26px;
-  height: 26px;
-  width: 26px;
-  left: calc(50% - 72.5px);
-  top: calc(50% - 13px);
+  -webkit-transform: scale(1.1);
+      -ms-transform: scale(1.1);
+          transform: scale(1.1);
   -webkit-transition: 0.2s all;
   -o-transition: 0.2s all;
   transition: 0.2s all;
