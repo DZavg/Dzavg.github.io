@@ -273,7 +273,7 @@ main {
     margin: 0 auto;
   }
   .header__logo:after {
-    width: 48px;
+    width: 47px;
     height: 3px;
     background-color: #bea67c;
     top: 30px;
@@ -1872,7 +1872,7 @@ main {
     padding-bottom: 20px;
   }
   .footer__logo:after {
-    width: 48px;
+    width: 47.5px;
     height: 3px;
     background-color: #bea67c;
     top: 40px;
