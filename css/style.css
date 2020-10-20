@@ -1,6 +1,11 @@
+@font-face {
+  font-family: "Proxima_Nova";
+  src: url(../fonts/Proxima_Nova.ttf);
+}
+
 body {
   color: #464646;
-  font-family: "Proxima Nova";
+  font-family: "Proxima_Nova";
   font-size: 15px;
   font-weight: 400;
   line-height: 25px;
