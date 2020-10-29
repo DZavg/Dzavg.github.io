@@ -1,0 +1,161 @@
+.reviews {
+   &:after {
+      display: block;
+      content: "";
+      background-image: url(../img/index/zigzag-mask-desktop.svg);
+      background-repeat: repeat no-repeat;
+      background-size: 80%;
+      height: 13px;
+      width: 100%;
+   }
+   &__wrapper {
+      display: block;
+   }
+   &__title {
+      padding: 35px 0px 0px 0px;
+   }
+   &__text {
+      @include null();
+      font-size: 15px;
+      font-weight: 400;
+      line-height: 30px;
+      color: #444444;
+      padding: 35px 0px 35px 0px;
+   }
+   &__nickname {
+      @include null();
+      color: #444444;
+      font-weight: 400;
+      padding: 10px 0px 0px 0px;
+   }
+   &__block_button {
+      display: flex;
+   }
+   &__button {
+      &_arrow {
+         width: 50%;
+         height: 52px;
+         background: none;
+         border: none;
+         background-repeat: no-repeat;
+         background-position: center;
+         border: 1px solid #ececec;
+         background-size: auto;
+         margin: 35px 0px 40px 0px;
+         outline: none;
+         cursor: pointer;
+         &-left {
+            background-image: url(../img/index/arrow-left.svg);
+         }
+
+         &-right {
+            background-image: url(../img/index/arrow-right.svg);
+         }
+         &:hover {
+            opacity: 0.6;
+         }
+
+         &:active {
+            opacity: 0.3;
+         }
+      }
+
+      &_white {
+         margin: 0px 0px 45px 0px;
+      }
+   }
+}
+
+@media (min-width: 768px) {
+   .reviews {
+      &:after {
+         margin: 65px 0px 0px 0px;
+         height: 20px;
+      }
+      margin-top: 25px;
+      &__wrapper {
+         display: flex;
+         align-items: center;
+         justify-content: space-between;
+      }
+      &__container {
+         min-height: 457px;
+         background-image: url(../img/index/reviews_image.png);
+         background-repeat: no-repeat;
+         position: relative;
+      }
+      &__title {
+         padding: 70px 0px 0px 0px;
+      }
+      &__text {
+         font-size: 17px;
+         padding: 50px 0px 45px 0px;
+      }
+      &__nickname {
+         padding: 10px 0px 0px 0px;
+      }
+      &__button {
+         &_arrow {
+            width: 50px;
+            height: 26px;
+            border: none;
+            background-size: 100%;
+            &-left {
+               background-image: url(../img/index/arrow-left.svg);
+               margin-right: 35px;
+            }
+
+            &-right {
+               background-image: url(../img/index/arrow-right.svg);
+               margin-right: 20px;
+            }
+         }
+
+         &_white {
+            width: 175px;
+            margin: 0px 0px 0px 0px;
+            position: absolute;
+            top: 80px;
+            right: 50px;
+         }
+      }
+   }
+}
+
+@media (min-width: 1250px) {
+   .reviews {
+      &:after {
+         display: none;
+      }
+      margin-top: 32px;
+      &__container {
+         background-position: 100px 0;
+         &:after {
+            display: block;
+            content: "";
+            background-image: url(../img/index/zigzag-mask-desktop.svg);
+            background-repeat: repeat no-repeat;
+            background-size: 80%;
+            height: 27px;
+            width: 100%;
+            margin: 115px 0px 0px 0px;
+         }
+      }
+      &__title {
+         padding: 70px 0px 0px 170px;
+      }
+      &__text {
+         font-size: 17px;
+         padding: 50px 0px 45px 170px;
+      }
+
+      &__block_author {
+         padding: 0px 0px 0px 170px;
+      }
+      &__button {
+         &_white {
+            right: 100px;
+         }
+      }
+   }
+}

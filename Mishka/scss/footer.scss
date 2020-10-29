@@ -1,0 +1,102 @@
+@mixin list {
+   list-style: none;
+   text-decoration: none;
+   margin: 0;
+   padding: 0;
+}
+
+@mixin null {
+   margin: 0;
+   padding: 0;
+}
+.footer {
+   background-color: #f1f1f1;
+   &__logo {
+      display: none;
+   }
+   &__list {
+      @include list();
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 80px;
+      border-bottom: 1px solid #e5e5e5;
+   }
+   &__item {
+      margin: 0px 40px 0px 0px;
+      &:last-child {
+         margin: 0px 0px 0px 0px;
+      }
+   }
+   &__developed {
+      min-height: 80px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      p {
+         @include null();
+         padding: 0px 15px 0px 0px;
+         font-size: 19px;
+         font-weight: 700;
+         line-height: 18px;
+      }
+      svg {
+         fill: #63d1bb;
+         stroke: #63d1bb;
+      }
+   }
+}
+
+@media (min-width: 768px) {
+   .footer {
+      &__wrapper {
+         min-height: 140px;
+         display: flex;
+         justify-content: space-between;
+         align-items: center;
+      }
+      &__logo {
+         display: block;
+         &:hover {
+            fill: #46c1ae;
+            cursor: pointer;
+            transition: 0.3s;
+         }
+         &:active {
+            fill: #46c1ae;
+            opacity: 0.3;
+            transition: 0.2s;
+         }
+      }
+      &__list {
+         min-height: auto;
+         border-bottom: none;
+      }
+      &__item {
+         svg {
+            &:hover {
+               fill: #46c1ae;
+               cursor: pointer;
+               transition: 0.3s;
+            }
+         }
+         svg {
+            &:active {
+               fill: #46c1ae;
+               opacity: 0.3;
+               transition: 0.2s;
+            }
+         }
+      }
+      &__developed {
+         &:hover {
+            cursor: pointer;
+         }
+         &:active {
+            opacity: 0.3;
+            cursor: pointer;
+            transition: 0.2s;
+         }
+      }
+   }
+}
