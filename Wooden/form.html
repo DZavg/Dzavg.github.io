@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500&display=swap" rel="stylesheet">
+   <!-- <link rel="SHORTCUT ICON" href="summer.svg" type="image/x-icon"> -->
+   <link rel="stylesheet" href="css/normalize.css">
+   <link rel="stylesheet" href="css/index.css">
+   <title>Cat Energy</title>
+</head>
+
+<body>
+   <header class="header header__catalog">
+      <div class="header__container container">
+         <nav class="header__nav">
+            <div class="header__block">
+               <picture class="header__img">
+                  <source srcset="img/index/logo_tablet.svg" media="(min-width: 1300px)">
+                  <source srcset="img/index/logo_tablet.svg" media="(min-width: 768px)">
+                  <img src="img/index/logo_mobile.svg" alt="">
+               </picture>
+               <img src="img/index/logo_mobile_header.svg" alt="" class="header__logo">
+               <button class="header__burger"></button>
+            </div>
+            <ul class="header__list">
+               <li class="header__item"><a href="index.html">Главная</a></li>
+               <li class="header__item"><a href="catalog.html">Каталог продукции</a></li>
+               <li class="header__item header__item_active"><a>Подбор программы</a></li>
+            </ul>
+         </nav>
+      </div>
+   </header>
+
+   <main>
+      <section class="form">
+         <div class="form__container container">
+            <h2 class="form__title">Подбор программы</h2>
+            <p class="form__description">Заполните анкету и мы подберем<br>
+               программу питания для вашего кота</p>
+            <form action="#" method="POST">
+               <div class="form__wrapper">
+                  <div class="form__block form__block_input">
+                     <div class="form__wrapper form__wrapper_input">
+                        <label for="form__input_1">Имя:*<span></span></label>
+                        <input type="text" name="name" id="form__input_1" class="form__input" required
+                           placeholder="Барсик">
+                     </div>
+                     <div class="form__wrapper form__wrapper_input">
+                        <label for="form__input_2">Вес (кг):*<span></span></label>
+                        <input type="text" name="weight" id="form__input_2" class="form__input" required
+                           placeholder="7">
+                     </div>
+                     <div class="form__wrapper form__wrapper_input">
+                        <label for="form__input_3">Возраст (лет):<span></span></label>
+                        <input type="text" name="years" id="form__input_3" class="form__input" placeholder="7">
+                     </div>
+                  </div>
+                  <div class="form__block form__block_radio">
+                     <div class="form__wrapper form__wrapper_radio">
+                        <input type="radio" class="form__radio" id="form__radio_1" checked name="radio">
+                        <label class="form__radio_custom" for="form__radio_1">Похудение <span></span></label>
+                     </div>
+                     <div class="form__wrapper form__wrapper_radio">
+                        <input type="radio" class="form__radio" id="form__radio_2" name="radio">
+                        <label class="form__radio_custom" for="form__radio_2">Набор массы <span></span></label>
+                     </div>
+                     <div class="form__wrapper form__wrapper_radio">
+                        <input type="radio" class="form__radio" id="form__radio_3" name="radio">
+                        <label class="form__radio_custom" for="form__radio_3">Не знаю (Нужен ваш
+                           совет) <span></span></label>
+                     </div>
+                  </div>
+               </div>
+               <h3 class="form__subtitle subtitle">Контактные данные<br> (владельца кота)</h3>
+               <div class="form__block form__block_input-two">
+                  <div class="form__wrapper form__wrapper_input form__wrapper_input-two">
+                     <label for="form__input_4">E-mail:*<span></span></label>
+                     <div class="form__block form__block_mail">
+                        <input type="text" name="name" id="form__input_4" class="form__input" required
+                           placeholder="kuklachev@gmail.com">
+                        <svg xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+                           xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg"
+                           viewBox="0 0 22.666668 17.333332" height="17.333332" width="22.666668" xml:space="preserve"
+                           id="svg2" version="1.1">
+                           <defs id="defs6" />
+                           <g transform="matrix(1.3333333,0,0,-1.3333333,0,17.333333)" id="g10">
+                              <g transform="translate(0,12.9996)" id="g12">
+                                 <path id="path14"
+                                    d="M 0,0 V -2.299 L 8.5,-9.4 17,-2.299 V 0 Z M 1.4,-1.599 V -1.4 H 15.6 V -1.599 L 8.5,-7.5 Z M 15.6,-5.8 v -5.799 H 1.4 V -5.8 H 0 V -13 h 17 v 7.2 z" />
+                              </g>
+                           </g>
+                        </svg>
+                     </div>
+                  </div>
+                  <div class="form__wrapper form__wrapper_input form__wrapper_input-two">
+                     <label for="form__input_5">Телефон:*<span></span></label>
+                     <div class="form__block form__block_phone">
+                        <input type="text" name="weight" id="form__input_5" class="form__input" required
+                           placeholder="8 (960) 900-60-90">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 26.607201 26.566668" height="26.566668"
+                           width="26.607201" xml:space="preserve" id="svg2" version="1.1">
+                           <defs id="defs6">
+                              <clipPath id="clipPath18" clipPathUnits="userSpaceOnUse">
+                                 <path id="path16" d="M 0,19.925 H 19.955 V 0 H 0 Z" />
+                              </clipPath>
+                           </defs>
+                           <g transform="matrix(1.3333333,0,0,-1.3333333,0,26.566667)" id="g10">
+                              <g id="g12">
+                                 <g clip-path="url(#clipPath18)" id="g14">
+                                    <g transform="translate(17.9058,10.5198)" id="g20">
+                                       <path id="path22"
+                                          d="M 0,0 H -8.5 V -1.2 H 0 l -2.101,-2.1 0.901,-0.9 3.099,3.1 c 0.201,0.2 0.201,0.6 0,0.9 L -1.2,2.9 -2.101,2 Z" />
+                                    </g>
+                                    <g transform="translate(8.1055,0.5198)" id="g24">
+                                       <path id="path26"
+                                          d="M 0,0 V 6.2 C 0,6.5 -0.3,6.8 -0.6,6.8 H -3.7 -5 c 0,-0.7 0.6,-1.2 1.2,-1.2 h 2.5 v -5 H -5 C -6,0.5 -6.8,1.3 -6.9,2.3 v 0.2 13.8 c 0,1 0.8,1.8 1.7,1.8 h 0.2 3.7 v -5 h -2.4 c -0.7,0 -1.2,-0.6 -1.2,-1.2 h 4.4 c 0.3,0 0.6,0.3 0.6,0.6 v 6.3 C 0,19.1 -0.3,19.4 -0.6,19.4 H -5 c -1.6,0.1 -3,-1.2 -3.1,-2.9 V 16.3 2.6 c -0.1,-1.701 1.2,-3.1 2.9,-3.1 H -5 -0.6 C -0.3,-0.601 0,-0.3 0,0" />
+                                    </g>
+                                 </g>
+                              </g>
+                           </g>
+                        </svg>
+                     </div>
+                  </div>
+               </div>
+               <h3 class="form__subtitle subtitle">Комментарий</h3>
+               <div class="form__block form__block_textarea">
+                  <textarea name="form__textarea" id="" placeholder="Расскажите обо всех повадках кота"
+                     class="form__textarea"></textarea>
+               </div>
+               <h3 class="form__subtitle subtitle">Дополнительно</h3>
+               <div class="form__block form__block_checkbox">
+                  <div class="form__wrapper form__wrapper_checkbox">
+                     <input type="checkbox" id="form__checkbox" checked class="form__checkbox">
+                     <label for="form__checkbox" class="form__checkbox_custom">Сахарозаменитель<span></span></label>
+                  </div>
+                  <div class="form__wrapper form__wrapper_checkbox">
+                     <input type="checkbox" id="form__checkbox_2" class="form__checkbox">
+                     <label for="form__checkbox_2" class="form__checkbox_custom">Питьевая вода<span></span></label>
+                  </div>
+                  <div class="form__wrapper form__wrapper_checkbox">
+                     <input type="checkbox" id="form__checkbox_3" checked class="form__checkbox">
+                     <label for="form__checkbox_3" class="form__checkbox_custom">Молоко<span></span></label>
+                  </div>
+                  <div class="form__wrapper form__wrapper_checkbox">
+                     <input type="checkbox" id="form__checkbox_4" class="form__checkbox">
+                     <label for="form__checkbox_4" class="form__checkbox_custom">Витамины<span></span></label>
+                  </div>
+               </div>
+               <div class="form__wrapper form__wrapper_button">
+                  <div class="form__block form__block_button">
+                     <button class="form__button button" type="submit">Отправить заявку</button>
+                  </div>
+                  <p class="form__text">* — Обязательные поля</p>
+               </div>
+            </form>
+         </div>
+      </section>
+
+
+      <section class="contacts contacts__catalog">
+         <div class="contacts__container container">
+            <div class="contacts__wrapper wrapper">
+               <b class="contacts__text">приглашаем<br>
+                  к сотрудничеству<br>
+                  дилеров!</b>
+               <p class="contacts__address">ул. Большая<br> Конюшенная, д. 19/8 <br>
+                  <span>Санкт-Петербург</span></p>
+            </div>
+         </div>
+         <picture class="contacts__map">
+            <source srcset="img/index/map_desktop.jpg" media="(min-width: 1300px)">
+            <source srcset="img/index/map_tablet.jpg" media="(min-width: 768px)">
+            <img src="img/index/map_mobile.jpg" alt="">
+         </picture>
+         </div>
+      </section>
+   </main>
+   <footer class="footer">
+      <div class="footer__container container">
+         <div class="footer__wrapper wrapper">
+            <div class="footer__logo"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 24" height="24"
+                  width="138" id="svg1">
+                  <defs id="defs6">
+                     <clipPath id="clipPath16" clipPathUnits="userSpaceOnUse">
+                        <path id="path16" d="M 0,18.086 H 100.501 V 0 H 0 Z" />
+                     </clipPath>
+                  </defs>
+                  <g transform="matrix(1.3333333,0,0,-1.3333333,0,24.1144)" id="g10">
+                     <g id="g12">
+                        <g clip-path="url(#clipPath16)" id="g14">
+                           <g transform="translate(1.2235,1.5097)" id="g20">
+                              <path id="path22"
+                                 d="m 0,0 c -0.815,1.005 -1.224,2.456 -1.224,4.353 v 6.339 c 0,1.94 0.405,3.405 1.214,4.397 0.808,0.99 2.189,1.487 4.145,1.487 1.866,0 3.189,-0.442 3.969,-1.325 0.778,-0.883 1.168,-2.134 1.168,-3.755 V 9.976 H 5.414 v 1.758 c 0,0.68 -0.074,1.202 -0.221,1.563 -0.148,0.362 -0.5,0.543 -1.058,0.543 -0.559,0 -0.927,-0.192 -1.103,-0.575 C 2.856,12.882 2.768,12.349 2.768,11.669 V 3.396 C 2.768,2.703 2.859,2.17 3.043,1.801 3.227,1.432 3.59,1.247 4.135,1.247 c 0.543,0 0.892,0.185 1.047,0.554 0.154,0.369 0.232,0.902 0.232,1.595 V 5.242 H 9.272 V 3.723 C 9.272,2.073 8.882,0.788 8.104,-0.131 7.324,-1.051 6.001,-1.51 4.135,-1.51 2.194,-1.51 0.816,-1.007 0,0" />
+                           </g>
+                           <g transform="translate(18.4144,6.2968)" id="g24">
+                              <path id="path26"
+                                 d="M 0,0 -0.947,6.86 -1.896,0 Z M -3.218,11.55 H 1.278 L 4.609,-6.036 H 0.971 l -0.596,3.712 h -2.623 l -0.618,-3.712 h -3.726 z" />
+                           </g>
+                           <g transform="translate(25.7513,14.9589)" id="g28">
+                              <path id="path30" d="M 0,0 H -2.69 V 2.888 H 6.637 V 0 H 3.969 V -14.698 H 0 Z" />
+                           </g>
+                           <g transform="translate(39.5316,17.8466)" id="g32">
+                              <path id="path34"
+                                 d="M 0,0 H 6.924 V -1.824 H 2.491 V -7.643 H 6.085 V -9.38 H 2.491 v -6.448 h 4.477 v -1.758 H 0 Z" />
+                           </g>
+                           <g transform="translate(48.4886,17.8466)" id="g36">
+                              <path id="path38"
+                                 d="M 0,0 H 1.697 L 6.77,-11.681 V 0 H 8.842 V -17.586 H 7.254 L 2.116,-5.579 V -17.586 H 0 Z" />
+                           </g>
+                           <g transform="translate(59.8119,17.8466)" id="g40">
+                              <path id="path42"
+                                 d="M 0,0 H 6.924 V -1.824 H 2.491 V -7.643 H 6.085 V -9.38 H 2.491 v -6.448 h 4.477 v -1.758 H 0 Z" />
+                           </g>
+                           <g transform="translate(72.2074,10.2695)" id="g44">
+                              <path id="path46"
+                                 d="M 0,0 C 1.073,0 1.842,0.21 2.305,0.63 2.769,1.05 2.999,1.809 2.999,2.909 2.999,3.633 2.918,4.201 2.756,4.613 2.595,5.025 2.309,5.33 1.897,5.525 1.485,5.721 0.904,5.818 0.154,5.818 H -0.947 V 0 Z M -3.438,7.577 H 0.154 C 1.963,7.577 3.29,7.212 4.135,6.481 4.979,5.75 5.403,4.56 5.403,2.909 5.403,0.65 4.667,-0.716 3.197,-1.194 l 2.535,-8.815 H 3.33 l -2.337,8.251 h -1.94 v -8.251 h -2.491 z" />
+                           </g>
+                           <g transform="translate(80.8119,1.5527)" id="g48">
+                              <path id="path50"
+                                 d="m 0,0 c -0.721,1.006 -1.081,2.499 -1.081,4.483 v 5.883 c 0,1.361 0.144,2.479 0.431,3.356 0.286,0.875 0.779,1.548 1.477,2.018 0.697,0.47 1.656,0.705 2.877,0.705 1.647,0 2.833,-0.412 3.562,-1.237 0.726,-0.824 1.09,-2.12 1.09,-3.886 V 10.671 H 6.02 v 0.542 c 0,0.84 -0.053,1.487 -0.155,1.944 -0.103,0.455 -0.32,0.799 -0.651,1.031 C 4.883,14.42 4.395,14.535 3.748,14.535 3.057,14.535 2.543,14.38 2.204,14.068 1.866,13.757 1.649,13.342 1.554,12.82 1.459,12.3 1.41,11.604 1.41,10.735 V 4.223 C 1.41,2.876 1.576,1.91 1.906,1.324 2.237,0.738 2.874,0.445 3.814,0.445 4.74,0.445 5.376,0.764 5.722,1.4 6.066,2.036 6.24,3.058 6.24,4.461 V 5.677 H 3.969 V 7.414 H 8.488 V -1.292 H 6.924 L 6.681,0.727 C 6.121,-0.764 5.063,-1.51 3.506,-1.51 1.889,-1.51 0.72,-1.006 0,0" />
+                           </g>
+                           <g transform="translate(94.2816,6.4697)" id="g52">
+                              <path id="path54"
+                                 d="m 0,0 -3.857,11.377 h 2.315 L 1.191,2.888 3.882,11.377 H 6.219 L 2.383,0 V -6.209 H 0 Z" />
+                           </g>
+                        </g>
+                     </g>
+                  </g>
+               </svg></div>
+
+            <ul class="footer__list">
+               <li class="footer__item"><a href="#"><svg xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink" width="22pt" height="12pt" viewBox="0 0 22 12"
+                        version="1.1">
+                        <g id="surface1">
+                           <path
+                              d="M 13.660156 8.3125 C 14.320313 8.3125 14.894531 8.914063 15.503906 9.546875 C 15.867188 9.925781 16.246094 10.320313 16.597656 10.542969 C 17.132813 10.878906 17.566406 10.863281 17.625 10.855469 L 17.699219 10.847656 L 20.488281 10.8125 C 20.617188 10.804688 20.792969 10.757813 20.882813 10.710938 C 20.871094 10.679688 20.847656 10.636719 20.8125 10.582031 C 20.480469 10.035156 19.792969 9.320313 18.84375 8.511719 C 17.972656 7.78125 17.523438 7.398438 17.472656 6.804688 C 17.425781 6.191406 17.835938 5.707031 18.652344 4.746094 C 18.859375 4.503906 19.097656 4.222656 19.363281 3.902344 C 20.503906 2.515625 20.796875 1.890625 20.871094 1.652344 C 20.746094 1.628906 20.394531 1.632813 20.375 1.636719 L 17.175781 1.65625 C 17.035156 1.65625 16.992188 1.683594 16.992188 1.683594 C 16.863281 2 16.398438 3.0625 15.789063 4.007813 C 14.398438 6.15625 13.746094 6.445313 13.289063 6.445313 C 13.140625 6.445313 13 6.40625 12.875 6.332031 C 12.136719 5.898438 12.167969 4.9375 12.1875 4.234375 C 12.191406 4.117188 12.195313 4.007813 12.195313 3.90625 C 12.195313 3.414063 12.214844 2.984375 12.230469 2.617188 C 12.285156 1.339844 12.242188 1.332031 11.953125 1.265625 C 11.652344 1.203125 11.433594 1.15625 10.589844 1.144531 L 10.082031 1.140625 C 9.625 1.140625 9.097656 1.152344 8.6875 1.214844 C 8.753906 1.273438 8.816406 1.335938 8.875 1.40625 C 9.308594 1.945313 9.320313 2.894531 9.316406 3.078125 C 9.410156 4.332031 9.363281 5.96875 8.570313 6.363281 C 8.429688 6.433594 8.28125 6.464844 8.132813 6.464844 C 7.453125 6.464844 6.773438 5.792969 5.621094 3.980469 C 4.964844 2.949219 4.476563 1.828125 4.457031 1.78125 C 4.449219 1.765625 4.417969 1.722656 4.402344 1.710938 C 4.339844 1.667969 4.230469 1.636719 4.167969 1.621094 L 1.234375 1.640625 C 1.21875 1.640625 1.199219 1.640625 1.183594 1.640625 C 1.613281 2.546875 3.695313 6.664063 5.960938 8.816406 C 7.972656 10.71875 10.234375 10.816406 10.667969 10.816406 L 12.027344 10.8125 C 12.058594 10.804688 12.183594 10.765625 12.222656 10.738281 C 12.207031 10.753906 12.214844 10.699219 12.214844 10.664063 C 12.214844 10.460938 12.222656 8.6875 13.371094 8.355469 C 13.464844 8.328125 13.5625 8.3125 13.660156 8.3125 M 17.554688 12 C 17.269531 12 16.695313 11.9375 16.03125 11.519531 C 15.558594 11.226563 15.136719 10.78125 14.722656 10.351563 C 14.402344 10.015625 13.863281 9.457031 13.664063 9.457031 C 13.464844 9.511719 13.308594 10.15625 13.3125 10.652344 C 13.316406 10.738281 13.3125 11.242188 12.96875 11.574219 C 12.660156 11.878906 12.171875 11.945313 12.078125 11.953125 L 10.667969 11.960938 C 9.957031 11.960938 7.472656 11.792969 5.21875 9.660156 C 2.523438 7.101563 0.207031 2.199219 0.109375 1.988281 C -0.0351563 1.640625 -0.0742188 1.179688 0.222656 0.863281 C 0.507813 0.546875 1.015625 0.503906 1.21875 0.496094 L 4.210938 0.480469 L 4.296875 0.484375 C 4.363281 0.496094 4.710938 0.558594 4.996094 0.75 C 5.28125 0.9375 5.429688 1.246094 5.457031 1.308594 C 5.464844 1.324219 5.933594 2.398438 6.539063 3.351563 C 7.5 4.867188 7.929688 5.21875 8.082031 5.300781 C 8.21875 4.984375 8.285156 4.007813 8.21875 3.113281 C 8.21875 2.738281 8.144531 2.28125 8.03125 2.140625 C 7.949219 2.039063 7.71875 1.949219 7.460938 1.917969 L 6.933594 1.390625 C 6.863281 0.890625 7.398438 0.457031 7.773438 0.289063 C 8.316406 0.0507813 9.089844 0 10.082031 0 L 10.601563 0.00390625 C 11.507813 0.0117188 11.792969 0.0664063 12.179688 0.148438 C 13.425781 0.425781 13.382813 1.464844 13.328125 2.671875 C 13.3125 3.023438 13.292969 3.433594 13.292969 3.90625 C 13.292969 4.019531 13.292969 4.144531 13.285156 4.269531 C 13.277344 4.558594 13.261719 5.0625 13.355469 5.261719 C 13.515625 5.152344 13.980469 4.757813 14.875 3.375 C 15.449219 2.484375 15.902344 1.4375 15.984375 1.238281 C 16.121094 0.910156 16.433594 0.519531 17.171875 0.515625 L 20.304688 0.5 C 20.3125 0.496094 20.429688 0.484375 20.582031 0.484375 C 21.300781 0.484375 21.75 0.707031 21.921875 1.136719 C 22.121094 1.632813 22.046875 2.398438 20.199219 4.644531 C 19.925781 4.972656 19.6875 5.253906 19.476563 5.5 C 19.039063 6.019531 18.585938 6.550781 18.570313 6.714844 C 18.609375 6.84375 19.054688 7.222656 19.488281 7.585938 C 20.609375 8.539063 21.34375 9.3125 21.710938 9.929688 C 22.09375 10.503906 22.027344 10.941406 21.902344 11.203125 C 21.589844 11.863281 20.699219 11.945313 20.527344 11.953125 L 17.746094 11.992188 C 17.707031 11.996094 17.640625 12 17.554688 12 " />
+                        </g>
+                     </svg>
+                  </a></li>
+               <li class="footer__item"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 22 22"
+                        height="18" width="18" id="svg2">
+                        <defs id="defs6">
+                           <clipPath id="clipPath17" clipPathUnits="userSpaceOnUse">
+                              <path id="path16" d="M 0,16.009 H 16 V 0 H 0 Z" />
+                           </clipPath>
+                        </defs>
+                        <g transform="matrix(1.3333333,0,0,-1.3333333,0,21.345333)" id="g10">
+                           <g id="g12">
+                              <g clip-path="url(#clipPath17)" id="g14">
+                                 <g transform="translate(11.8252,16.0092)" id="g20">
+                                    <path id="path22"
+                                       d="m 0,0 h -7.651 c -2.297,0 -4.174,-1.879 -4.174,-4.176 v -7.657 c 0,-2.296 1.877,-4.176 4.174,-4.176 h 7.653 c 2.294,0 4.173,1.88 4.173,4.177 v 7.656 C 4.175,-1.879 2.296,0 0,0 m 0,-1.043 c 1.727,0 3.131,-1.407 3.131,-3.133 v -7.657 c 0,-1.727 -1.404,-3.132 -3.131,-3.132 h -7.651 c -1.726,0 -3.131,1.405 -3.131,3.132 v 7.657 c 0,1.726 1.405,3.132 3.131,3.132 H 0" />
+                                 </g>
+                                 <g transform="translate(7.9995,12.1264)" id="g24">
+                                    <path id="path26"
+                                       d="m 0,0 c -2.278,0 -4.126,-1.847 -4.126,-4.126 0,-2.279 1.847,-4.125 4.126,-4.125 2.279,0 4.125,1.846 4.125,4.125 C 4.125,-1.847 2.279,0 0,0 m 0,-1.044 c 1.699,0 3.083,-1.382 3.083,-3.082 0,-1.698 -1.384,-3.083 -3.083,-3.083 -1.7,0 -3.082,1.384 -3.082,3.083 0,1.7 1.382,3.082 3.082,3.082" />
+                                 </g>
+                                 <g transform="translate(12.2734,13.1986)" id="g28">
+                                    <path id="path30"
+                                       d="m 0,0 c 0.516,0 0.934,-0.418 0.934,-0.934 0,-0.515 -0.418,-0.933 -0.934,-0.933 -0.516,0 -0.934,0.418 -0.934,0.933 C -0.934,-0.418 -0.516,0 0,0" />
+                                 </g>
+                              </g>
+                           </g>
+                        </g>
+                     </svg></a></li>
+               <li class="footer__item"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 14 28"
+                        height="26" width="18" xml:space="preserve" id="svg3" version="1.1">
+                        <defs id="defs6">
+                           <clipPath id="clipPath18" clipPathUnits="userSpaceOnUse">
+                              <path id="path16" d="M 0,19 H 10 V 0 H 0 Z" />
+                           </clipPath>
+                        </defs>
+                        <g transform="matrix(1.3333333,0,0,-1.3333333,0,25.333333)" id="g10">
+                           <g id="g12">
+                              <g clip-path="url(#clipPath18)" id="g14">
+                                 <g transform="translate(3.118,1.027)" id="g20">
+                                    <path id="path22"
+                                       d="M 0,0 H 2.823 V 8.835 H 5.75 v 2.311 H 2.826 l -0.012,0.502 c -0.032,1.397 10e-4,2.591 0.745,3.054 l 0.14,0.087 h 2.072 v 2.157 H 3.376 C 2.224,16.884 1.37,16.548 0.797,15.921 0.027,15.079 -0.246,13.664 -0.016,11.715 l 0.069,-0.57 H -2.008 V 8.834 H 0 Z m 3.933,-1.027 h -5.042 v 8.836 h -2.009 v 4.364 h 1.945 c -0.15,1.976 0.22,3.423 1.124,4.412 0.768,0.842 1.91,1.309 3.394,1.387 l 3.537,10e-4 V 13.762 H 4.104 C 3.981,13.546 3.919,13.014 3.918,12.173 H 6.86 V 7.808 H 3.933 Z" />
+                                 </g>
+                              </g>
+                           </g>
+                        </g>
+                     </svg></a></li>
+            </ul>
+            <div class="footer__developed">
+               <p class="footer__text">HTML Academy</p>
+               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 34 45" height="34" width="30" xml:space="preserve"
+                  id="svg4" version="1.1">
+                  <defs id="defs6" />
+                  <g transform="matrix(1.3333333,0,0,-1.3333333,0,45.453067)" id="g10">
+                     <g transform="translate(13.473,34.0902)" id="g12">
+                        <path id="path14"
+                           d="m 0,0 -13.473,-1.412 v -24.662 l 13.474,-8.016 13.43,7.99 0.041,0.024 V -1.412 L 0.147,-0.017 Z m -11.548,-3.147 11.549,1.212 11.547,-1.212 v -8.98 H 11.546 L 0.022,-5.334 0.021,-5.23 -0.066,-5.28 -0.154,-5.224 v -0.109 l -11.394,-6.785 z m 0.109,-10.475 11.371,6.834 11.518,-6.712 -4.479,-2.641 -7.093,4.221 -0.014,-1.414 5.904,-3.513 -0.86,-0.508 -5.03,2.993 -0.014,-1.415 3.827,-2.275 -0.782,-0.524 -3.031,1.787 -0.014,-1.413 1.853,-1.09 -1.8,-1.081 z m 19.582,-8.549 -0.011,5.177 3.416,2.037 V -24.979 L 0,-31.85 l -11.548,6.871 v 9.852 l 11.411,-6.792 0.016,-1.044 -7.942,4.728 -0.015,-1.416 7.979,-4.795 0.019,-1.076 -7.974,4.74 -0.013,-1.414 8.021,-4.822 0.047,-0.024 z" />
+                     </g>
+                  </g>
+               </svg>
+            </div>
+         </div>
+      </div>
+   </footer>
+</body>
+
+</html>

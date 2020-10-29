@@ -1,0 +1,128 @@
+.about {
+   &__title {
+      padding: 30px 0px 30px 0px;
+   }
+   &__wrapper {
+      flex-direction: column;
+   }
+
+   &__list {
+      @include list();
+   }
+
+   &__item {
+      @include list();
+      margin: 0px 0px 25px 0px;
+      &:before {
+         display: block;
+         content: "";
+         background-repeat: no-repeat;
+         background-size: 90%;
+         position: relative;
+      }
+
+      &_flower {
+         &:before {
+            width: 37px;
+            height: 40px;
+            background-image: url(../img/index/icon-flower.svg);
+            margin: 0px 0px 20px 8px;
+         }
+      }
+
+      &_money {
+         &:before {
+            width: 47px;
+            height: 27px;
+            background-image: url(../img/index/icon-money.svg);
+            margin: 0px 0px 20px 0px;
+         }
+      }
+
+      &_like {
+         &:before {
+            width: 47px;
+            height: 35px;
+            background-image: url(../img/index/icon-love.svg);
+            background-size: 70%;
+            margin: 0px 0px 20px 8px;
+         }
+      }
+
+      &_sew {
+         &:before {
+            width: 35px;
+            height: 34px;
+            background-image: url(../img/index/icon-tie.svg);
+            margin: 0px 0px 20px 3px;
+         }
+      }
+
+      &_rocket {
+         &:before {
+            width: 55px;
+            height: 25px;
+            background-image: url(../img/index/icon-rocket.svg);
+            margin: 0px 0px 20px -7px;
+         }
+      }
+
+      &_gift {
+         &:before {
+            width: 33px;
+            height: 33px;
+            background-image: url(../img/index/icon-gift.svg);
+            background-size: 100%;
+            margin: 0px 0px 20px 3px;
+         }
+      }
+   }
+}
+
+@media (min-width: 768px) {
+   .about {
+      &__title {
+         padding: 55px 0px 42px 0px;
+      }
+      &__wrapper {
+         flex-direction: row;
+         align-items: center;
+      }
+
+      &__list {
+         width: 50%;
+      }
+
+      &__item {
+         font-size: 20px;
+         font-weight: 700;
+         line-height: 22px;
+         margin: 0px 0px 55px 0px;
+         &:before {
+            margin: 0px 0px 25px 8px;
+         }
+
+         &_rocket {
+            &:before {
+               margin: 65px 0px 20px -7px;
+            }
+         }
+      }
+   }
+}
+
+@media (min-width: 1250px) {
+   .about {
+      &__title {
+         padding: 70px 0px 43px 170px;
+      }
+
+      &__list {
+         width: 40%;
+      }
+
+      &__wrapper {
+         padding-left: 170px;
+      }
+   }
+}

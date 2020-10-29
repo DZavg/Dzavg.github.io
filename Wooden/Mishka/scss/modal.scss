@@ -1,0 +1,119 @@
+.modal {
+   min-width: 320px;
+   height: 336px;
+   box-shadow: 0 5px 10px rgba(0, 1, 1, 0.25);
+   border: 1px solid #c6c6c6;
+   text-align: center;
+   &__container {
+      width: 260px;
+      margin: 0 auto;
+      padding: 0px 30px 0px 30px;
+   }
+   &__title {
+      @include null();
+      font-size: 25px;
+      font-weight: 700;
+      line-height: 30px;
+      text-transform: uppercase;
+      padding: 30px 0px 20px 0px;
+   }
+   &__description {
+      @include null();
+      font-size: 15px;
+      font-weight: 400;
+      line-height: 30px;
+      color: #444444;
+   }
+   &__list {
+      @include list();
+      margin: 25px 0px 0px 0px;
+      display: flex;
+   }
+   &__item {
+      @include list();
+      width: 82px;
+      height: 52px;
+      border: 2px solid #444444;
+      background-color: #ffffff;
+      opacity: 0.1;
+      margin: 0px 7px 0px 0px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      &:last-child {
+         margin: 0px 0px 0px 0px;
+      }
+      &_active {
+         border: 2px solid #63d1bb;
+         opacity: 1;
+      }
+   }
+   &__button {
+      background: none;
+      border: none;
+      font: inherit;
+      font-size: 17px;
+      font-weight: 700;
+      line-height: 16px;
+      text-transform: uppercase;
+      color: #ffffff;
+      width: 260px;
+      height: 52px;
+      background-color: #63d1bb;
+      margin: 30px 0px 45px 0px;
+      p {
+         @include null();
+      }
+   }
+}
+
+@media (min-width: 768px) {
+   .modal {
+      width: 566px;
+      height: 336px;
+      margin: 0 auto;
+      &__container {
+         width: 350px;
+         padding: 0px 105px 0px 105px;
+      }
+      &__title {
+         font-size: 29px;
+         padding: 50px 0px 30px 0px;
+      }
+      &__description {
+         font-size: 17px;
+      }
+      &__item {
+         width: 112px;
+         &:last-child {
+            margin: 0px 0px 0px 0px;
+         }
+         &:hover {
+            opacity: 0.2;
+            cursor: pointer;
+         }
+
+         &:active {
+            border: 2px solid #62d1ba;
+            opacity: 1;
+         }
+         &_active {
+            &:hover {
+               opacity: 1;
+            }
+         }
+      }
+      &__button {
+         width: 350px;
+         margin: 30px 0px 45px 0px;
+         outline: none;
+         &:hover {
+            cursor: pointer;
+            background-color: #59d5bc;
+         }
+         &:active p {
+            opacity: 0.3;
+         }
+      }
+   }
+}

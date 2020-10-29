@@ -1,0 +1,225 @@
+.content {
+  background-image: url(../img/index/hero-mobile.jpg);
+  background-position: center 0;
+  background-repeat: no-repeat;
+  background-color: #fafafa;
+}
+
+.content__list {
+  display: none;
+}
+
+.content__title {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  font-size: 27px;
+  padding: 90px 0 120px 0;
+}
+
+.content__block_button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.content__button {
+  width: 100%;
+  border: none;
+  outline: none;
+  background: none;
+  text-align-last: left;
+}
+
+.content__button p {
+  margin: 0;
+  padding: 0;
+}
+
+.content__button_interior {
+  background-color: #63d1bb;
+  position: relative;
+}
+
+.content__button_interior:after {
+  display: block;
+  content: "";
+  background-image: url(../img/index/interior.svg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  width: 40px;
+  height: 62px;
+  opacity: 0.5;
+  position: absolute;
+  top: 23px;
+  right: 35px;
+}
+
+.content__button_toy {
+  background-color: #56c3b2;
+  position: relative;
+}
+
+.content__button_toy:after {
+  display: block;
+  content: "";
+  background-image: url(../img/index/toy.svg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  width: 60px;
+  height: 60px;
+  opacity: 0.5;
+  position: absolute;
+  top: 21px;
+  right: 27px;
+}
+
+.container__button {
+  min-width: 320px;
+  padding: 0;
+}
+
+@media (min-width: 768px) {
+  .content {
+    position: relative;
+    background-image: url(../img/index/hero-tablet.jpg);
+  }
+  .content:after {
+    content: "";
+    display: block;
+    background-image: url(../img/index/zig-zag-tablet.svg);
+    background-repeat: repeat;
+    background-size: 90%;
+    width: 100%;
+    height: 24px;
+    position: absolute;
+    bottom: -10px;
+  }
+  .content__list_tablet {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    list-style: none;
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+    padding-top: 25px;
+  }
+  .content__item a {
+    list-style: none;
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 24px;
+    color: #000;
+  }
+  .content__item:nth-child(2) {
+    padding: 0px 0px 0px 35px;
+  }
+  .content__item:last-child {
+    margin-left: auto;
+    color: #444444;
+    font-weight: 400;
+    font-size: 15px;
+  }
+  .content__item:hover {
+    opacity: 0.6;
+    cursor: pointer;
+  }
+  .content__item:active {
+    opacity: 0.3;
+  }
+  .content__item:hover:last-child {
+    opacity: 1;
+    cursor: auto;
+  }
+  .content__title {
+    font-size: 43px;
+    line-height: 50px;
+    padding: 110px 0 370px 0;
+  }
+  .content__block_button {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .content__button_interior:after {
+    top: 30px;
+    right: 35px;
+  }
+  .content__button_interior:hover {
+    cursor: pointer;
+    background-color: #59d5bc;
+    height: 124px;
+  }
+  .content__button_interior:active {
+    height: 124px;
+  }
+  .content__button_toy:after {
+    top: 32px;
+    right: 33px;
+  }
+  .content__button_toy:hover {
+    cursor: pointer;
+    background-color: #46c1ae;
+    height: 124px;
+  }
+  .content__button_toy:active {
+    height: 124px;
+  }
+  .content__button:active p, .content__button:active:after {
+    opacity: 0.3;
+  }
+  .container__button {
+    min-width: auto;
+    padding: 0 50px;
+  }
+}
+
+@media (min-width: 1250px) {
+  .content:after {
+    background-size: 60%;
+  }
+  .content__item a {
+    list-style: none;
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 24px;
+    color: #000;
+  }
+  .content__item:nth-child(2) {
+    padding: 0px 0px 0px 50px;
+  }
+  .content__list_tablet {
+    display: none;
+  }
+  .content__list_desktop {
+    list-style: none;
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 25px 0px 0px 0px;
+  }
+  .content__title {
+    font-size: 53px;
+    line-height: 57px;
+    padding: 110px 0 360px 0;
+  }
+  .container__button {
+    width: 1050px;
+    padding: 0 100px;
+  }
+}

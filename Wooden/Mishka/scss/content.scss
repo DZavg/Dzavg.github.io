@@ -1,0 +1,235 @@
+@mixin list {
+   list-style: none;
+   text-decoration: none;
+   margin: 0;
+   padding: 0;
+}
+
+@mixin null {
+   margin: 0;
+   padding: 0;
+}
+.content {
+   background-image: url(../img/index/hero-mobile.jpg);
+   background-position: center 0;
+   background-repeat: no-repeat;
+   background-color: #fafafa;
+   &__list {
+      display: none;
+   }
+
+   &__title {
+      @include null();
+      text-align: center;
+      font-size: 27px;
+      padding: 90px 0 120px 0;
+   }
+
+   &__block_button {
+      display: flex;
+      flex-direction: column;
+   }
+
+   &__button {
+      width: 100%;
+      border: none;
+      outline: none;
+      background: none;
+      text-align-last: left;
+
+      p {
+         @include null();
+      }
+
+      &_interior {
+         background-color: #63d1bb;
+         position: relative;
+         &:after {
+            display: block;
+            content: "";
+            background-image: url(../img/index/interior.svg);
+            background-repeat: no-repeat;
+            background-size: 100%;
+            width: 40px;
+            height: 62px;
+            opacity: 0.5;
+            position: absolute;
+            top: 23px;
+            right: 35px;
+         }
+      }
+
+      &_toy {
+         background-color: #56c3b2;
+         position: relative;
+         &:after {
+            display: block;
+            content: "";
+            background-image: url(../img/index/toy.svg);
+            background-repeat: no-repeat;
+            background-size: 100%;
+            width: 60px;
+            height: 60px;
+            opacity: 0.5;
+            position: absolute;
+            top: 21px;
+            right: 27px;
+         }
+      }
+   }
+}
+
+.container__button {
+   min-width: 320px;
+   padding: 0;
+}
+
+@media (min-width: 768px) {
+   .content {
+      position: relative;
+      background-image: url(../img/index/hero-tablet.jpg);
+      &:after {
+         content: "";
+         display: block;
+         background-image: url(../img/index/zig-zag-tablet.svg);
+         background-repeat: repeat;
+         background-size: 90%;
+         width: 100%;
+         height: 24px;
+         position: absolute;
+         bottom: -10px;
+      }
+      &__list {
+         &_tablet {
+            display: flex;
+            @include list();
+            padding-top: 25px;
+         }
+      }
+
+      &__item {
+         a {
+            @include list();
+            font-size: 15px;
+            font-weight: 700;
+            line-height: 24px;
+            color: #000;
+         }
+         &:nth-child(2) {
+            padding: 0px 0px 0px 35px;
+         }
+
+         &:last-child {
+            margin-left: auto;
+            color: #444444;
+            font-weight: 400;
+            font-size: 15px;
+         }
+         &:hover {
+            opacity: 0.6;
+            cursor: pointer;
+         }
+         &:active {
+            opacity: 0.3;
+         }
+         &:hover:last-child {
+            opacity: 1;
+            cursor: auto;
+         }
+      }
+
+      &__title {
+         font-size: 43px;
+         line-height: 50px;
+         padding: 110px 0 370px 0;
+      }
+
+      &__block_button {
+         flex-direction: row;
+      }
+
+      &__button {
+         &_interior {
+            &:after {
+               top: 30px;
+               right: 35px;
+            }
+            &:hover {
+               cursor: pointer;
+               background-color: #59d5bc;
+               height: 124px;
+            }
+            &:active {
+               height: 124px;
+            }
+         }
+
+         &_toy {
+            &:after {
+               top: 32px;
+               right: 33px;
+            }
+            &:hover {
+               cursor: pointer;
+               background-color: #46c1ae;
+               height: 124px;
+            }
+            &:active {
+               height: 124px;
+            }
+         }
+
+         &:active p,
+         &:active:after {
+            opacity: 0.3;
+         }
+      }
+   }
+
+   .container__button {
+      min-width: auto;
+      padding: 0 50px;
+   }
+}
+
+@media (min-width: 1250px) {
+   .content {
+      &:after {
+         background-size: 60%;
+      }
+      &__item {
+         a {
+            @include list();
+            font-size: 15px;
+            font-weight: 700;
+            line-height: 24px;
+            color: #000;
+         }
+         &:nth-child(2) {
+            padding: 0px 0px 0px 50px;
+         }
+      }
+
+      &__list {
+         &_tablet {
+            display: none;
+         }
+         &_desktop {
+            @include list();
+            display: flex;
+            padding: 25px 0px 0px 0px;
+         }
+      }
+
+      &__title {
+         font-size: 53px;
+         line-height: 57px;
+         padding: 110px 0 360px 0;
+      }
+   }
+
+   .container__button {
+      width: 1050px;
+      padding: 0 100px;
+   }
+}

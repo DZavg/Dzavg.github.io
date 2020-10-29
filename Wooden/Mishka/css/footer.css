@@ -1,0 +1,120 @@
+.footer {
+  background-color: #f1f1f1;
+}
+
+.footer__logo {
+  display: none;
+}
+
+.footer__list {
+  list-style: none;
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-height: 80px;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.footer__item {
+  margin: 0px 40px 0px 0px;
+}
+
+.footer__item:last-child {
+  margin: 0px 0px 0px 0px;
+}
+
+.footer__developed {
+  min-height: 80px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.footer__developed p {
+  margin: 0;
+  padding: 0;
+  padding: 0px 15px 0px 0px;
+  font-size: 19px;
+  font-weight: 700;
+  line-height: 18px;
+}
+
+.footer__developed svg {
+  fill: #63d1bb;
+  stroke: #63d1bb;
+}
+
+@media (min-width: 768px) {
+  .footer__wrapper {
+    min-height: 140px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .footer__logo {
+    display: block;
+  }
+  .footer__logo:hover {
+    fill: #46c1ae;
+    cursor: pointer;
+    -webkit-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s;
+  }
+  .footer__logo:active {
+    fill: #46c1ae;
+    opacity: 0.3;
+    -webkit-transition: 0.2s;
+    -o-transition: 0.2s;
+    transition: 0.2s;
+  }
+  .footer__list {
+    min-height: auto;
+    border-bottom: none;
+  }
+  .footer__item svg:hover {
+    fill: #46c1ae;
+    cursor: pointer;
+    -webkit-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s;
+  }
+  .footer__item svg:active {
+    fill: #46c1ae;
+    opacity: 0.3;
+    -webkit-transition: 0.2s;
+    -o-transition: 0.2s;
+    transition: 0.2s;
+  }
+  .footer__developed:hover {
+    cursor: pointer;
+  }
+  .footer__developed:active {
+    opacity: 0.3;
+    cursor: pointer;
+    -webkit-transition: 0.2s;
+    -o-transition: 0.2s;
+    transition: 0.2s;
+  }
+}

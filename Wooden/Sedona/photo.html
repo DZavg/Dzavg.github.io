@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="SHORTCUT ICON" href="summer.svg" type="image/x-icon">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="sourse/scss/header-form.css">
+    <link rel="stylesheet" href="sourse/scss/photo.css">
+    <link rel="stylesheet" href="sourse/scss/footer.css">
+    <title>Sedona</title>
+</head>
+
+<body>
+    <header class="main-header">
+        <div class="header__container container">
+            <h1 class="visually-hidden">Sedona</h1>
+            <nav class="main-header__navigation">
+                <ul class="navigation-list navigation-list__off">
+                    <li class="navigation-item"><a href="index.html">Главная</a></li>
+                    <li class="navigation-item"><a class="navigation-link--active">Фото и видео</a></li>
+                    <li class="navigation-item"><a href="form.html">Форма отзыва</a></li>
+                    <li class="navigation-item"><a href="#">HTML ACADEMY</a></li>
+                </ul>
+                <div class="main-header__burger">
+                    <button class="main-header__button" type="button">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                </div>
+                <picture class="header__logo">
+                    <source srcset="img/logo-desktop.svg" media="(min-width: 1200px)">
+                    <source srcset="img/logo-mobile.svg" media="(min-width: 768px)">
+                    <img src="img/logo-mobile.svg" alt="">
+                </picture>
+            </nav>
+            <div class="header__image"></div>
+        </div>
+    </header>
+
+    <main class="photo-page">
+        <section class="index-description">
+            <div class="index-description__container container">
+                <h2 class="index-description__title">Фото и видео</h2>
+                <p class="index-description__description">Не можете решиться на путешествие из-за курса? Фотографии
+                    помогут
+                    вам забыть о политике и экономике.
+                </p>
+            </div>
+        </section>
+
+        <section class="photo">
+            <div class="photo__container container">
+                <ul class="photo__list">
+                    <li class="photo__item">
+                        <picture class="photo__image">
+                            <source srcset="sourse/img/photo/photo-1-desktop.png" media="(min-width: 1200px)">
+                            <source srcset="sourse/img/photo/photo-1-tablet.png" media="(min-width: 768px)">
+                            <img src="sourse/img/photo/photo-1-mobile.jpg" alt="">
+                        </picture>
+                        <div class="photo__info">
+                            <div class="info__description">
+                                <h4 class="photo__title">Неродные просторы</h4>
+                                <p class="photo__author">Автор фото: Борис</p>
+                            </div>
+                            <div class="likes">
+                                <button class="likes__button"></button>
+                                <p class="likes__quantity">1350</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="photo__item">
+                        <picture class="photo__image">
+                            <source srcset="sourse/img/photo/photo-2-desktop.png" media="(min-width: 1200px)">
+                            <source srcset="sourse/img/photo/photo-2-tablet.png" media="(min-width: 768px)">
+                            <img src="sourse/img/photo/photo-2-mobile.png" alt="">
+                        </picture>
+                        <div class="photo__info">
+                            <div class="info__description">
+                                <h4 class="photo__title">Местная растительность</h4>
+                                <p class="photo__author">Автор фото: Сергей</p>
+                            </div>
+                            <div class="likes">
+                                <button class="likes__button"></button>
+                                <p class="likes__quantity">143</p>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="photo__item">
+                        <picture class="photo__image">
+                            <source srcset="sourse/img/photo/photo-3-desktop.png" media="(min-width: 1200px)">
+                            <source srcset="sourse/img/photo/photo-3-tablet.png" media="(min-width: 768px)">
+                            <img src="sourse/img/photo/photo-3-mobile.png" alt="">
+                        </picture>
+                        <div class="photo__info">
+                            <div class="info__description">
+                                <h4 class="photo__title">Дорога на север</h4>
+                                <p class="photo__author">Автор фото: Петр</p>
+                            </div>
+                            <div class="likes">
+                                <button class="likes__button"></button>
+                                <p class="likes__quantity">96</p>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="photo__item">
+                        <picture class="photo__image">
+                            <source srcset="sourse/img/photo/photo-4-desktop.png" media="(min-width: 1200px)">
+                            <source srcset="sourse/img/photo/photo-4-tablet.png" media="(min-width: 768px)">
+                            <img src="sourse/img/photo/photo-4-mobile.png" alt="">
+                        </picture>
+                        <div class="photo__info">
+                            <div class="info__description">
+                                <h4 class="photo__title">Мост дьявола</h4>
+                                <p class="photo__author">Автор фото: Антон</p>
+                            </div>
+                            <div class="likes">
+                                <button class="likes__button"></button>
+                                <p class="likes__quantity">254</p>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="video">
+            <div class="video__container container">
+                <b class="video__title">Все еще сомневаетесь?</b>
+                <p class="video__description">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в
+                    очередной раз!</p>
+                <picture>
+                    <source srcset="sourse/img/photo/video_desctop.png" media="(min-width:1200px)">
+                    <source srcset="sourse/img/photo/video_tablet.png" media="(min-width:768px)">
+                    <img src="sourse/img/photo/video.png" alt="">
+                </picture>
+            </div>
+        </section>
+    </main>
+
+    <footer class="main-footer">
+        <div class="footer__container container">
+            <b class="footer__hashtag">#VISITSEDONA</b>
+            <ul class="footer__social--list">
+                <a href="#">
+                    <li class="social__item">
+                        <svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="10px" height="0.263102in"
+                            version="1.1" viewBox="0 0 120 263" xmlns:xlink="http://www.w3.org/1999/xlink">
+                            <g id="__x0023_Layer_x0020_1">
+                                <path class="fil0"
+                                    d="M87 47c11,0 22,0 33,0 0,-16 0,-31 0,-47 -13,0 -27,0 -40,0 -44,3 -59,33 -53,85l-27 0 0 49 27 0c0,43 0,86 0,129 18,0 36,0 53,0 0,-43 0,-86 0,-129l40 0 0 -49 -40 0c0,-15 -1,-33 7,-38z" />
+                            </g>
+                        </svg>
+                    </li>
+                </a>
+
+                <a href="#">
+                    <li class="social__item">
+                        <svg viewBox="0 0 23.333332 19.549467" height="19.549467" width="20px" xml:space="preserve"
+                            id="svg2" version="1.1">
+                            <g transform="matrix(1.3333333,0,0,-1.3333333,0,19.549467)" id="g10">
+                                <g id="g12">
+                                    <g clip-path="url(#clipPath18)" id="g14">
+                                        <g transform="translate(11.2832,14.5098)" id="g20">
+                                            <path id="path22"
+                                                d="m 0,0 c 1.736,0.484 3.074,-0.264 3.685,-1.15 0.694,0.225 1.372,0.47 2.072,0.69 C 5.753,-1.301 5.219,-1.938 4.874,-2.188 5.578,-2.353 6.217,-1.707 6.217,-1.707 6.042,-2.684 5.182,-3.453 4.605,-3.684 4.367,-10.276 1.334,-14.64 -5.776,-14.507 h -0.46 c -0.422,0 -4.29,0.449 -5.047,1.843 2.341,-0.192 4.011,0.412 4.835,1.149 -0.989,0.293 -2.761,0.465 -3.07,2.881 0.362,-0.104 0.583,-0.222 1.228,-0.116 -1.236,0.836 -2.608,1.537 -2.532,3.685 0.294,-0.319 1.1,-0.523 1.381,-0.461 -0.725,0.235 -2.03,3.281 -0.921,4.836 1.873,-1.812 3.848,-3.521 7.369,-3.685 0.216,2.24 1.171,3.74 2.993,4.375" />
+                                        </g>
+                                    </g>
+                                </g>
+                            </g>
+                        </svg>
+                    </li>
+                </a>
+
+                <a href="#">
+                    <li class="social__item">
+                        <svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="22px" height="0.194661in"
+                            version="1.1" viewBox="0 0 277 195" xmlns:xlink="http://www.w3.org/1999/xlink">
+                            <g id="__x0023_Layer_x0020_1">
+                                <path class="fil0"
+                                    d="M238 0l-199 0c-22,0 -39,18 -39,39l0 116c0,22 18,39 39,39l199 0c22,0 39,-18 39,-39l0 -116c0,-22 -18,-39 -39,-39zm-140 144l0 0 0 -94 94 47 -94 47z" />
+                            </g>
+                        </svg>
+
+                    </li>
+                </a>
+            </ul>
+            <div class="developed-by">
+                <p>Разработано</p>
+                <a href="https://htmlacademy.ru"><img src="img/htmlacademy-icon.svg" alt="" width="27px"
+                        height="34px"></a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        let burger = document.querySelector(".main-header__burger");
+        let menu = document.querySelector(".navigation-list")
+        burger.onclick = function (event) {
+            event.preventDefault();
+            console.log("Гей");
+            menu.classList.toggle("navigation-list__off");
+            burger.classList.toggle("main-header__burger-on");
+        }
+    </script>
+</body>
+
+</html>

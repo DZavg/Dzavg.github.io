@@ -1,0 +1,191 @@
+@charset "UTF-8";
+.featured:after {
+  display: block;
+  content: "";
+  background-image: url(../img/index/zigzag-mask-desktop.svg);
+  background-repeat: repeat no-repeat;
+  background-size: 80%;
+  height: 11px;
+  width: 100%;
+}
+
+.featured__title {
+  padding: 30px 0px 0px 0px;
+}
+
+.featured__title:after {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  content: "Товар недели";
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: #63d1bb;
+  margin: 5px 0px 0px 0px;
+}
+
+.featured__description {
+  margin: 0;
+  padding: 0;
+  font-size: 15px;
+  line-height: 24px;
+  font-weight: 400;
+  color: #444444;
+  padding: 30px 0;
+}
+
+.featured__list {
+  list-style: none;
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
+}
+
+.featured__item {
+  list-style: none;
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 20px;
+  color: #444444;
+  height: 40px;
+  border-bottom: 1px solid #ececec;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.featured__image_tablet {
+  display: none;
+}
+
+.featured__image_mobile {
+  margin: 25px 0px 28px 0px;
+  width: 100%;
+}
+
+.featured__price {
+  display: block;
+  color: #444444;
+  text-align: center;
+}
+
+.featured__button {
+  margin: 25px 0px 35px 0px;
+}
+
+.featured__block {
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+  .featured__wrapper {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .featured:after {
+    background-size: 80%;
+    background-repeat: repeat no-repeat;
+    height: 17px;
+  }
+  .featured__title {
+    padding: 40px 0px 0px 0px;
+    position: absolute;
+    width: 93%;
+  }
+  .featured__title:after {
+    width: 70px;
+    text-align: center;
+    margin: 0px 0px 0px 0px;
+    position: absolute;
+    top: 50px;
+    right: 60px;
+  }
+  .featured__description {
+    font-size: 17px;
+    line-height: 30px;
+    padding: 130px 50px 50px 0;
+  }
+  .featured__item {
+    margin-right: 50px;
+  }
+  .featured__block {
+    width: 50%;
+    margin-bottom: 50px;
+  }
+  .featured__image_tablet {
+    display: block;
+    margin-top: 145px;
+  }
+  .featured__image_mobile {
+    display: none;
+  }
+  .featured__price {
+    margin: 55px 50px 30px 0px;
+  }
+  .featured__button {
+    min-width: 292px;
+    width: auto;
+    margin: -5px 50px 0px 0px;
+  }
+}
+
+@media (min-width: 1250px) {
+  .featured:after {
+    display: none;
+  }
+  .featured__container:after {
+    display: block;
+    content: "";
+    background-image: url(../img/index/zigzag-mask-desktop.svg);
+    background-repeat: repeat no-repeat;
+    background-size: 80%;
+    height: 23px;
+    width: 100%;
+  }
+  .featured__title {
+    padding: 115px 0px 0px 0px;
+    position: absolute;
+    width: auto;
+  }
+  .featured__title:after {
+    width: 70px;
+    text-align: center;
+    margin: 0px 0px 0px 0px;
+    position: absolute;
+    top: 130px;
+    right: 0;
+    left: -130px;
+  }
+  .featured__description {
+    padding: 220px 70px 40px 0;
+  }
+  .featured__item {
+    margin-right: 70px;
+  }
+  .featured__block {
+    padding-left: 170px;
+  }
+  .featured__image_tablet {
+    margin-top: 55px;
+  }
+  .featured__price {
+    margin: 100px 70px 40px 0px;
+  }
+  .featured__button {
+    min-width: 292px;
+    width: auto;
+    margin: 0px 0px 0px 0px;
+  }
+}
