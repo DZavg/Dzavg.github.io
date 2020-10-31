@@ -1031,10 +1031,6 @@ img {
             margin: 0 25px;
             transition: all 600ms ease;
             cursor: pointer;
-            .team__photo {
-               // width: 100px !important;
-               transition: all 600ms ease;
-            }
             @media (max-width: 768px) {
                opacity: 1;
                margin: 0;
@@ -1046,7 +1042,7 @@ img {
             outline: none;
          }
       }
-      .slick-current {
+      .slick-current.slick-slide {
          opacity: 1;
       }
       .slick-track {
