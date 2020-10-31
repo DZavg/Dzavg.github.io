@@ -1188,13 +1188,14 @@ body {
   padding-left: 20px;
 }
 
-.contacts__map_desktop {
-  display: none;
+.contacts__map {
+  width: 100%;
+  height: 100%;
 }
 
-.contacts__map_mobile img {
-  width: 100%;
-  max-width: 100%;
+.contacts__map iframe {
+  height: 450px;
+  display: block;
 }
 
 @media (min-width: 768px) {
@@ -1296,13 +1297,12 @@ body {
   .contacts__button {
     margin: 0px 0px 0px 0;
   }
-  .contacts__map_desktop {
-    display: block;
-    width: 50%;
+  .contacts__map {
     margin-top: 70px;
   }
-  .contacts__map_mobile {
-    display: none;
+  .contacts__map iframe {
+    height: 490px;
+    display: block;
   }
 }
 
