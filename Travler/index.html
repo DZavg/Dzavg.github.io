@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="css/normalize.css">
+   <link rel="stylesheet" href="css/slick.css">
+   <link rel="stylesheet" href="css/style.css">
+   <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
+
+   <title>Travler</title>
+</head>
+
+<body>
+   <svg style="display: none;">
+      <symbol id="one" viewBox="0 0 26 26">
+         <g>
+            <path
+               d="M12.785 26C5.74 26 .006 20.168.006 13S5.74 0 12.786 0c7.046 0 12.778 5.832 12.778 13s-5.732 13-12.779 13zm5.372-5.985c-.873 2.009-2.025 3.425-3.011 4.367a11.346 11.346 0 0 0 5.348-2.799 15.828 15.828 0 0 0-2.337-1.568zm-13.11 1.54a11.349 11.349 0 0 0 5.378 2.827c-1.009-.963-2.19-2.423-3.07-4.504-.763.437-1.534.99-2.309 1.677zm8.41-3.048v5.546c.967-.754 2.443-2.21 3.485-4.63a11.694 11.694 0 0 0-3.484-.916zm-4.892.767c1.044 2.51 2.562 4.01 3.548 4.78v-5.586a9.968 9.968 0 0 0-3.548.806zm10.066-.499c1.194.63 2.151 1.32 2.794 1.835a11.691 11.691 0 0 0 2.775-6.926h-4.7c-.062 1.969-.39 3.656-.869 5.091zm-17.26-5.09a11.69 11.69 0 0 0 2.74 6.885 15.108 15.108 0 0 1 2.765-1.987c-.444-1.393-.747-3.017-.806-4.899zm12.087 3.482c1.441.134 2.774.527 3.945 1.024.41-1.275.692-2.768.751-4.507h-4.696zm-6.042-3.483c.056 1.647.312 3.075.688 4.305a11.096 11.096 0 0 1 4.009-.867v-3.438zM19.5 12.316h4.7a11.69 11.69 0 0 0-2.74-6.885 15.094 15.094 0 0 1-2.766 1.986c.444 1.393.747 3.017.806 4.899zm-6.042 0h4.696c-.056-1.647-.312-3.075-.687-4.304a11.096 11.096 0 0 1-4.01.866zm-6.042 0h4.697V8.833c-1.442-.134-2.775-.527-3.946-1.024-.41 1.275-.692 2.768-.751 4.507zm-6.045 0H6.07c.062-1.969.39-3.656.869-5.091a17.799 17.799 0 0 1-2.794-1.836 11.691 11.691 0 0 0-2.774 6.927zM13.458 1.947v5.585a9.968 9.968 0 0 0 3.547-.806c-1.044-2.51-2.562-4.01-3.547-4.779zm-4.83 4.63a11.7 11.7 0 0 0 3.485.916V1.947c-.966.754-2.443 2.21-3.485 4.63zm6.518-4.96c1.008.964 2.19 2.424 3.07 4.505.762-.437 1.533-.99 2.308-1.677a11.352 11.352 0 0 0-5.379-2.827zm-10.07 2.8a15.79 15.79 0 0 0 2.337 1.568c.873-2.009 2.026-3.425 3.012-4.367a11.35 11.35 0 0 0-5.348 2.799z" />
+         </g>
+      </symbol>
+      <symbol id="two" viewBox="0 0 26 25">
+         <g>
+            <path
+               d="M6.966 23.285a.68.68 0 0 1-.672-.666l-.12-5.856-5.68-2.872a.679.679 0 0 1-.27-.98l.001-.002a.477.477 0 0 1 .018-.025.67.67 0 0 1 .258-.219L24.667.443a.668.668 0 0 1 .95.376.688.688 0 0 1-.024.507l-9.06 21.384a.69.69 0 0 1-.12.198h-.001a.547.547 0 0 1-.025.027s-.001.001 0 0a.667.667 0 0 1-.45.2l-.02.001h-.008a.661.661 0 0 1-.387-.124l-5.12-3.57-2.916 3.595a.67.67 0 0 1-.52.248zm4.302-4.89l3.937 2.745-.177-7.216zm-3.752-1.743l.084 4.1 2.153-2.655.006-.007a.147.147 0 0 1 .004-.005L19.39 6.643l-5.422 4.57a.636.636 0 0 1-.03.026zm8.819-4.28l.17 6.953 6.109-14.417zM2.84 13.557l3.903 1.974 4.314-3.636zM20.103 4.27L5.577 11.618l7.645-1.547z" />
+         </g>
+      </symbol>
+      <symbol id="three" viewBox="0 0 21 26">
+         <g>
+            <path
+               d="M19.617 26H1.457a.678.678 0 0 1-.672-.684V.684c0-.378.3-.684.672-.684h12.109a.666.666 0 0 1 .47.197l.001.001v.001h.001L14.04.2l6.053 6.158.001.001h.001v.002h.001l.001.001a.688.688 0 0 1 .193.478v18.476a.678.678 0 0 1-.672.684zM2.13 24.632h16.814V7.526h-5.38a.678.678 0 0 1-.673-.684V1.37H2.13zM14.236 6.158h3.757l-3.757-3.822zm2.354 14.71H4.484a.678.678 0 0 1-.673-.684c0-.378.301-.684.673-.684H16.59c.372 0 .673.306.673.684a.678.678 0 0 1-.673.684zm0-3.078H4.484a.679.679 0 0 1-.673-.685c0-.378.301-.684.673-.684H16.59c.372 0 .673.306.673.684a.679.679 0 0 1-.673.685zm-6.053-3.08H4.484a.678.678 0 0 1-.673-.684c0-.377.301-.684.673-.684h6.053c.371 0 .673.307.673.684a.678.678 0 0 1-.673.685zm-.473-7.184h-5.58a.678.678 0 0 1-.673-.684V3.763c0-.378.301-.684.673-.684h5.58c.371 0 .673.306.673.684v3.08a.678.678 0 0 1-.673.683zM5.156 6.158h4.236v-1.71H5.156z" />
+         </g>
+      </symbol>
+      <symbol id="four" viewBox="0 0 17 27">
+         <g>
+            <path
+               d="M8.756 25.316a.671.671 0 0 1-.594-.362L1.217 11.72a8.395 8.395 0 0 1-.7-3.368c0-4.606 3.696-8.354 8.24-8.354 4.542 0 8.238 3.748 8.238 8.354a8.394 8.394 0 0 1-.73 3.441L9.35 24.955a.672.672 0 0 1-.594.36zM2.417 11.104l6.34 12.079 6.309-12.01c.388-.89.584-1.839.584-2.821 0-3.854-3.092-6.99-6.894-6.99-3.801 0-6.894 3.136-6.894 6.99 0 .956.187 1.882.555 2.752zm6.34 1.308c-2.374 0-4.305-1.958-4.305-4.365s1.93-4.365 4.304-4.365c2.374 0 4.305 1.958 4.305 4.365s-1.931 4.365-4.305 4.365zm0-7.366c-1.632 0-2.96 1.346-2.96 3 0 1.655 1.328 3.002 2.96 3.002 1.631 0 2.959-1.347 2.959-3.001 0-1.655-1.328-3.001-2.96-3.001z" />
+         </g>
+      </symbol>
+      <symbol id="five" viewBox="0 0 21 26">
+         <g>
+            <path
+               d="M19.617 26H1.457a.678.678 0 0 1-.672-.684V.684c0-.378.3-.684.672-.684h12.109a.666.666 0 0 1 .47.197l.001.001v.001h.002V.2l6.053 6.158.001.001h.001v.002h.001l.001.001c.12.123.193.292.193.478v18.476a.678.678 0 0 1-.672.684zM2.13 24.632h16.814V7.526h-5.38a.678.678 0 0 1-.673-.684V1.37H2.13zM14.236 6.158h3.757l-3.757-3.822zm2.354 14.71H4.484a.678.678 0 0 1-.673-.684c0-.378.301-.684.673-.684H16.59c.372 0 .673.306.673.684a.678.678 0 0 1-.673.684zm0-3.078H4.484a.679.679 0 0 1-.673-.685c0-.378.301-.684.673-.684H16.59c.372 0 .673.306.673.684a.679.679 0 0 1-.673.685zm-6.053-3.08H4.484a.678.678 0 0 1-.673-.684c0-.377.301-.684.673-.684h6.053c.371 0 .673.307.673.684a.678.678 0 0 1-.673.685zm-.473-7.184h-5.58a.678.678 0 0 1-.673-.684V3.763c0-.378.301-.684.673-.684h5.58c.372 0 .673.306.673.684v3.08a.678.678 0 0 1-.673.683zM5.156 6.158h4.236v-1.71H5.156z" />
+         </g>
+      </symbol>
+      <symbol id="facebook" viewBox="0 0 6 12">
+         <g>
+            <path
+               d="M3.988 11.993H1.325V6h-1.33V3.933h1.33v-1.24c0-1.685.751-2.688 2.886-2.688h1.777v2.067h-1.11c-.832 0-.886.288-.886.827l-.004 1.034h2.013l-.236 2.066H3.988v5.994z" />
+         </g>
+      </symbol>
+      <symbol id="twitter" viewBox="0 0 13 9">
+         <g>
+            <path
+               d="M12.998 4.15c-.458.078-1.121-.003-1.473-.15.73-.06 1.226-.394 1.416-.847-.263.163-1.081.34-1.532.171a5.507 5.507 0 0 0-.072-.3C10.993 1.756 9.815.733 8.581.857c.1-.04.2-.078.303-.112.135-.05.932-.18.807-.462-.106-.25-1.08.187-1.264.244.242-.09.643-.248.685-.528-.37.051-.735.227-1.016.484a.7.7 0 0 0 .195-.388c-.99.636-1.567 1.915-2.035 3.158-.367-.358-.693-.64-.985-.797-.819-.44-1.798-.901-3.336-1.475-.047.511.252 1.191 1.112 1.643-.186-.025-.527.031-.8.096.111.586.474 1.069 1.456 1.302-.448.03-.68.133-.89.354.204.407.703.886 1.6.788-.998.432-.407 1.233.405 1.113-1.385 1.438-3.569 1.332-4.823.13 3.274 4.483 10.391 2.65 11.452-1.667.795.006 1.261-.277 1.551-.59z" />
+         </g>
+      </symbol>
+      <symbol id="rss" viewBox="0 0 9 9">
+         <g>
+            <path
+               d="M-.003 3.06A5.946 5.946 0 0 1 5.934 9H4.203A4.193 4.193 0 0 0 2.97 6.018 4.174 4.174 0 0 0-.003 4.784zM-.001 0c4.96 0 8.993 4.04 8.993 9.003h-1.73c0-4.012-3.259-7.277-7.263-7.277zm2.395 7.798c0 .66-.538 1.195-1.2 1.195-.662 0-1.199-.535-1.199-1.195s.537-1.195 1.2-1.195c.661 0 1.199.535 1.199 1.195z" />
+         </g>
+      </symbol>
+      <symbol id="mail" viewBox="0 0 13 9">
+         <g>
+            <path
+               d="M13.007 8.952V.636L9.033 3.922zM6.51 5.342l6.463-5.345H.047zm-2.523-1.42L.008.632l-.01 8.342zm.318.263L.497 9.008h12.027l-3.81-4.823-2.202 1.822v.002l-.001-.001-.002.001v-.002z" />
+         </g>
+      </symbol>
+   </svg>
+
+   <header class="header">
+      <div class="header__container container">
+         <div class="header__wrapper wrapper">
+            <div class="header__content">
+               <div class="header__logo logo">
+                  <img src="img/logo.svg" alt="Логотип компании">
+                  <h1>travler <span>Get the advice you need about travel</span></h1>
+               </div>
+               <div class="header__menu">
+                  <button class="header__burger">
+                     <span></span>
+                  </button>
+               </div>
+               <a class="header__quicklink" href="#">Quicklinks</a>
+               <button class="header__dropdown">Select from dropdown <span>
+                     <>
+                  </span></button>
+               <input type="text" class="header__search" placeholder="Search for somthing here">
+            </div>
+            <nav class="header__nav">
+               <ul class="header__list">
+                  <li><a href="#" class="header__link">
+                        <svg>
+                           <use xlink:href="#one"></use>
+                        </svg>
+                        <span>Travel Guide</span>
+                     </a></li>
+                  <li><a href="#" class="header__link">
+                        <svg>
+                           <use xlink:href="#two"></use>
+                        </svg>
+
+                        <span>Services</span>
+                     </a></li>
+                  <li><a href="#" class="header__link">
+                        <svg>
+                           <use xlink:href="#three"></use>
+                        </svg>
+                        <span>About</span>
+                     </a></li>
+                  <li><a href="#" class="header__link">
+                        <svg>
+                           <use xlink:href="#four"></use>
+                        </svg>
+                        <span>The Tour</span>
+                     </a></li>
+                  <li><a href="#" class="header__link">
+                        <svg>
+                           <use xlink:href="#one"></use>
+                        </svg>
+                        <span>How to</span>
+                     </a></li>
+                  <li><a href="#" class="header__link">
+                        <svg>
+                           <use xlink:href="#five"></use>
+                        </svg>
+                        <span>Contact</span>
+                     </a></li>
+               </ul>
+            </nav>
+         </div>
+      </div>
+   </header>
+</body>
+
+<main>
+   <div class="intro">
+      <div class="intro__slider">
+         <div class="slider__item" style="background-image: url(../img/slider.jpg);">
+         </div>
+         <div class="slider__item" style="background-image: url(../img/slider.jpg);">
+         </div>
+         <div class="slider__item" style="background-image: url(../img/slider.jpg);">
+         </div>
+      </div>
+   </div>
+   <section class="grey">
+      <div class="container">
+         <b class="grey__slogan slogan">Anywhere, anytime, where here to help.</b>
+         <p class="grey__phrase phrase">And we mean that.</p>
+         <img class="grey__img" src="img/map.png" alt="">
+         <ul class="grey__advantages">
+            <li class="grey__advantage">
+               <h3>Save Time</h3>
+               <p class="text">Lets throw a trackie dacks also it'll be gutta. You little ripper avos flamin lets throw
+                  a lizard
+                  drinking. Gutful of jug where as busy as a big smoke. Grab us a billy as cunning as a bull bar. As
+                  cunning as a bonzer flamin as stands out like cubby house. As cross as a mate no dramas as cunning as
+                  a bonzer. Gutful of kindie flamin as cross as a grundies.</p>
+            </li>
+            <li class="grey__advantage">
+               <h3>Win over the team</h3>
+               <p class="text">As cunning as a bonzer flamin as stands out like cubby house. As cross as a mate no
+                  dramas as cunning as a bonzer. Gutful of kindie flamin as cross as a grundies. Lets throw a strides
+                  also as cross as a thingo.
+               </p>
+               <p class="text">Built like a old fella no dramas grab us a ten clicks away.</p>
+            </li>
+            <li class="grey__advantage">
+               <h3>Design Features</h3>
+               <p class="text">Built like a old fella no dramas grab us a ten clicks away. Lets get some digger when
+                  she'll be right
+                  metho. As cross as a no dramas as cunning as a barrack.</p>
+               <p class="text">
+                  A old fella no dramas grab us a ten clicks away. Lets get some digger when she'll be right metho. As
+                  cross as a no dramas as cunning as a barrack.
+               </p>
+            </li>
+         </ul>
+      </div>
+   </section>
+
+   <section class="screen">
+      <div class="screen__container container">
+         <b class="screen__slogan slogan">A simple begining lead to big ideas</b>
+         <p class="screen__phrase phrase">We started small but grew quickly.</p>
+      </div>
+   </section>
+
+   <section class="team">
+      <div class="container">
+         <b class="team__slogan slogan">A humble Team we are</b>
+         <p class="team__phrase phrase">We’ll some of us anyways</p>
+         <div class="team__slider">
+            <div class="slider__item-team">
+               <div class="slider__photo">
+                  <img src="img/11.jpg" alt="">
+                  <a class="slider__social" href="#">
+                     <svg>
+                        <use xlink:href="#twitter"></use>
+                     </svg>
+                  </a>
+               </div>
+               <div class="slider__info">
+                  <span class="slider__name">Josh Jansen</span>
+                  <span class="slider__profession">Digital Producer</span>
+               </div>
+            </div>
+            <div class="slider__item-team">
+               <div class="slider__photo">
+                  <img src="img/22.jpg" alt="">
+                  <a class="slider__social" href="#">
+                     <svg>
+                        <use xlink:href="#twitter"></use>
+                     </svg>
+                  </a>
+               </div>
+               <div class="slider__info">
+                  <span class="slider__name">Blaz Robar</span>
+                  <span class="slider__profession">Designer</span>
+               </div>
+            </div>
+            <div class="slider__item-team">
+               <div class="slider__photo">
+                  <img src="img/33.jpg" alt="">
+                  <a class="slider__social" href="#">
+                     <svg>
+                        <use xlink:href="#twitter"></use>
+                     </svg>
+                  </a>
+               </div>
+               <div class="slider__info">
+                  <span class="slider__name">James Brown</span>
+                  <span class="slider__profession">Developer</span>
+               </div>
+            </div>
+            <div class="slider__item-team">
+               <div class="slider__photo">
+                  <img src="img/44.jpg" alt="">
+                  <a class="slider__social" href="#">
+                     <svg>
+                        <use xlink:href="#twitter"></use>
+                     </svg>
+                  </a>
+               </div>
+               <div class="slider__info">
+                  <span class="slider__name">Skeletor</span>
+                  <span class="slider__profession">Administration</span>
+               </div>
+            </div>
+            <div class="slider__item-team">
+               <div class="slider__photo">
+                  <img src="img/44.jpg" alt="">
+                  <a class="slider__social" href="#">
+                     <svg>
+                        <use xlink:href="#twitter"></use>
+                     </svg>
+                  </a>
+               </div>
+               <div class="slider__info">
+                  <span class="slider__name">Skeletor</span>
+                  <span class="slider__profession">Administration</span>
+               </div>
+            </div>
+         </div>
+      </div>
+   </section>
+
+   <section class="content">
+      <div class="container">
+         <ul class="content__cards">
+            <li class="content__card">
+               <h4 class="content__title">Winning Design Awards</h4>
+               <p class="content__purple">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eu turpis
+                  purus. Pellentesque ullamcorper mauris vitae sapien bibendum tincidunt. Check leo dignissim + </p>
+               <p class="content__grey">Morbi malesuada mauris sed nibh placerat sit amet posuere libero egestas.
+                  Vestibulum consectetur iaculis est, at dapibus purus malesuada vitae. Mauris sollicitudin aliquam
+                  scelerisque. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae;
+                  Donec et mi sem. Duis tristique elementum tristique. Sed ac magna quis erat sagittis suscipit.
+                  Phasellus faucibus rhoncus massa, non laoreet lorem fringilla
+               </p>
+               <a class="content__button">+</a>
+            </li>
+            <li class="content__card">
+               <h4 class="content__title">Winning Design Awards</h4>
+               <p class="content__purple">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eu turpis
+                  purus. Pellentesque ullamcorper mauris vitae sapien bibendum tincidunt. Check leo dignissim + </p>
+               <p class="content__grey">Morbi malesuada mauris sed nibh placerat sit amet posuere libero egestas.
+                  Vestibulum consectetur iaculis est, at dapibus purus malesuada vitae. Mauris sollicitudin aliquam
+                  scelerisque. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae;
+                  Donec et mi sem. Duis tristique elementum tristique. Sed ac magna quis erat sagittis suscipit.
+                  Phasellus faucibus rhoncus massa, non laoreet lorem fringilla </p>
+               <a class="content__button">+</a>
+            </li>
+            <li class="content__card">
+               <h4 class="content__title">A full col text box sits nicely like this</h4>
+               <p class="content__purple">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eu turpis
+                  purus. Pellentesque ullamcorper mauris vitae sapien bibendum tincidunt. Check leo dignissim + </p>
+               <p class="content__grey">Morbi malesuada mauris sed nibh placerat sit amet posuere libero egestas.
+                  Vestibulum consectetur iaculis est, at dapibus purus malesuada vitae. Mauris sollicitudin aliquam
+                  scelerisque. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae;
+                  Donec et mi sem. Duis tristique elementum tristique. Sed ac magna quis erat sagittis suscipit.
+                  Phasellus faucibus rhoncus massa, non laoreet lorem fringilla non.</p>
+               <a class="content__button">+</a>
+            </li>
+         </ul>
+      </div>
+   </section>
+</main>
+
+<footer class="footer">
+   <div class="container">
+      <div class="footer__wrapper">
+         <div class="header__logo logo">
+            <img src="img/logo_footer.svg" alt="Логотип компании">
+            <h1>travler <span>Get the advice you need about travel</span></h1>
+         </div>
+         <nav class="footer__nav">
+            <ul class="footer__list">
+               <li class="footer__item footer__item_active"><a href="#"
+                     class="footer__link footer__link_active">Portfolio</a></li>
+               <li class="footer__item"><a href="#" class="footer__link">Services</a></li>
+               <li class="footer__item"><a href="#" class="footer__link">Staff</a></li>
+               <li class="footer__item"><a href="#" class="footer__link">Articles</a></li>
+               <li class="footer__item"><a href="#" class="footer__link">Contact</a></li>
+            </ul>
+         </nav>
+
+         <p class="footer__text">Trent from punchy digger bloody gutful of mokkies. Get a dog up ya fair dinkum mate as
+            cross as a flake. Stands out like a bluey flamin stands out like a pot. As stands out like christmas to grab
+            us
+            a ugg boots. She'll be right buckley's chance my as stands out like divvy van. It'll be smokes trent from
+            punchy chewie. </p>
+
+         <ul class="footer__socials">
+            <li class="footer__social"><a href="#"><svg>
+                     <use xlink:href="#twitter"></use>
+                  </svg>
+                  <span>Twitter</span></a></li>
+            <li class="footer__social"><a href="#"><svg>
+                     <use xlink:href="#facebook"></use>
+                  </svg>
+                  <span>Facebook</span></a></li>
+            <li class="footer__social"><a href="#"><svg>
+                     <use xlink:href="#rss"></use>
+                  </svg>
+                  <span>RSS</span></a></li>
+            <li class="footer__social"><a href="#"><svg>
+                     <use xlink:href="#mail"></use>
+                  </svg>
+                  <span>Mail</span></a></li>
+         </ul>
+
+         <ul class="footer__licenses">
+            <li><a href="#" class="footer__license">About us</a></li>
+            <li><a href="#" class="footer__license">Privacy</a></li>
+            <li><a href="#" class="footer__license">Privacy</a></li>
+            <li><a href="#" class="footer__license">Privacy</a></li>
+            <li><a href="#" class="footer__license">Privacy</a></li>
+         </ul>
+
+         <p class="footer__text footer__text_grey">As cross as a hoon my built like a op shop. We're going bored
+            sh*tless heaps she'll be right budgie smugglers. Grab us a durry mate she'll be right dunny rat. She'll be
+            right larrikin with skite. As stands out like kero it'll be truckie.</p>
+      </div>
+   </div>
+</footer>
+
+
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<script src="js/slick.min.js"></script>
+<script>
+   let burger = document.querySelector('.header__burger');
+   let menu = document.querySelector('.header__nav');
+   burger.onclick = function () {
+      menu.classList.toggle('header__nav_active');
+      burger.classList.toggle('header__burger_active');
+   }
+</script>
+<script>
+   $('.intro__slider').slick({
+      infinite: true,
+      arrows: false,
+      slidesToShow: 1,
+      slidesToScroll: 1
+   });
+   $('.team__slider').slick({
+      infinite: true,
+      arrows: false,
+      dots: true,
+      slidesToShow: 4,
+      swipe: false,
+      // autoplay: true,
+      slidesToScroll: 1,
+      responsive: [
+         {
+            breakpoint: 768,
+            settings: {
+               slidesToShow: 3,
+               swipe: true
+            }
+         },
+         {
+            breakpoint: 550,
+            settings: {
+               slidesToShow: 2
+            }
+         },
+         {
+            breakpoint: 350,
+            settings: {
+               slidesToShow: 1
+            }
+         },
+      ]
+   });
+
+</script>
+
+</html>
