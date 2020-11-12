@@ -9,4 +9,11 @@ tabBtn.forEach(function (item) {
    });
 });
 
+let burger = document.querySelector('.header__burger');
+let menu = document.querySelector('.header__menu');
+burger.onclick = function () {
+   menu.classList.toggle('header__menu_active');
+   burger.classList.toggle('header__burger_active');
+}
+
 

@@ -234,6 +234,12 @@ img {
          text-transform: uppercase;
          font-size: 18px;
       }
+      &__menu {
+         display: none;
+         &_active {
+            display: block;
+         }
+      }
       &__burger {
          display: block;
          height: 25px;
