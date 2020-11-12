@@ -205,6 +205,28 @@ img {
   color: #ffffff;
 }
 
+.header__menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 60%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+@media (max-width: 900px) {
+  .header__menu {
+    width: 72%;
+  }
+}
+
+@media (max-width: 768px) {
+  .header__menu {
+    width: 100%;
+  }
+}
+
 .header__button {
   background: none;
   border: none;
@@ -326,7 +348,7 @@ img {
 }
 
 .intro {
-  background-image: url(../img/intro__bg.jpg);
+  background-image: url(../Service/img/intro__bg.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   min-height: 100vh;

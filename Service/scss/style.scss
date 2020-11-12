@@ -170,6 +170,17 @@ img {
          color: #ffffff;
       }
    }
+   &__menu {
+      display: flex;
+      width: 60%;
+      justify-content: space-between;
+      @media (max-width: 900px) {
+         width: 72%;
+      }
+      @media (max-width: 768px) {
+         width: 100%;
+      }
+   }
    &__button {
       background: none;
       border: none;
@@ -281,7 +292,7 @@ img {
 }
 
 .intro {
-   background-image: url(../img/intro__bg.jpg);
+   background-image: url(../Service/img/intro__bg.jpg);
    background-repeat: no-repeat;
    background-size: cover;
    min-height: 100vh;
